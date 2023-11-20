@@ -1,0 +1,350 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --main-font-family: "Raleway", sans-serif;
+}
+
+body {
+  background-color: aliceblue;
+  font-family: var(--main-font-family);
+  display: flex;
+  justify-content: center;
+
+}
+
+.container {
+  width: 1400px;
+}
+
+header {
+  display: flex;
+
+  height: 80px;
+  justify-content: space-between;
+}
+
+.photo {
+  height: 30px;
+  width: 30px;
+}
+
+header > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.bank-logo {
+  height: 60px;
+  width: 60px;
+}
+
+header > div h2 {
+  text-transform: uppercase;
+}
+
+.motto {
+  color: rgb(34, 63, 118);
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.left-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex:1;
+  background-color: rgb(77, 91, 136);
+  padding-top: 35px;
+  border-radius: 8px;
+}
+main {
+  display: flex;
+  height: 100vh;
+
+  margin-bottom: 16px;
+}
+
+.inner-middle {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.heading-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.heading {
+  padding: 0 16px;
+  width: 75%;
+  flex: 1;
+  gap: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(182, 199, 234);
+  border-radius: 8px;
+}
+
+.heading > div p {
+  text-align: left;
+}
+
+#heading2 {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+#heading2 p {
+  text-align: right;
+}
+
+#heading2 button {
+  height: 40px;
+  border: none;
+  width: max-content;
+  padding: 0 16px;
+  border-radius: 8px;
+  background-color: rgb(34, 63, 118);
+  cursor: pointer;
+  color: aliceblue;
+}
+
+#heading2 button:hover {
+  background-color: aliceblue;
+  color:  rgb(34, 63, 118);
+}
+
+
+.profile {
+  height: 60px;
+  width: 60px;
+  border-radius: 999px;
+}
+
+.heading-container h2 {
+  font-size: 32px;
+}
+
+.heading-container p {
+  text-align: center;
+}
+
+.middle-header {
+  height: 55px;
+  display: flex;
+  flex-direction: column;
+}
+
+.middle-header > h1 {
+  text-align: center;
+  padding: 8px;
+}
+
+h1,
+h2,
+h4 {
+  color: rgb(34, 63, 118);
+}
+
+.left-container button {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50%;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(175, 195, 238);
+}
+
+.left-container button:hover {
+  background-color: rgb(210, 224, 247);
+}
+
+.right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1;
+  background-color: rgb(77, 91, 136);
+  border-radius: 8px;
+}
+
+.wallet-photo {
+  height: 70px;
+  width: 70px;
+}
+
+.right-outer {
+  height: 25%;
+  width: 65%;
+  border-radius: 16px;
+  background-color: rgb(175, 195, 238);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.information-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 25%;
+  width: 65%;
+  gap: 16px;
+  background-color: rgb(175, 195, 238);
+  border-radius: 16px;
+  border: solid 2px rgb(141, 164, 220);
+}
+
+.information-detail {
+  border-radius: 10px;
+  width: 85%;
+  padding: 4px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.information-detail h4 {
+  text-transform: uppercase;
+}
+
+#money-situation p {
+  font-weight: bolder;
+}
+
+.previous-text {
+  position: absolute;
+  bottom: 140px;
+  color: aliceblue;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+#previous {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.previous-child {
+  height: 30px;
+  width: 80%;
+  border: solid 2px rgb(141, 164, 220);
+  border-radius: 8px;
+}
+
+footer {
+  width: 95%;
+  height: 200px;
+  margin: auto;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+footer > p {
+  text-align: center;
+}
+
+footer > div {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+}
+
+footer > div > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.announcements {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.announcements > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.announcements > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.announcements > div > div :hover {
+  color: aliceblue;
+  background-color: rgb(96, 139, 153);
+  border: none;
+}
+
+.announcements-details {
+  background-color: lightblue;
+  border: solid 4px rgb(163, 205, 231);
+  border-radius: 8px;
+  height: 40px;
+  width: 250px;
+  padding: 4px;
+  gap: 8px;
+}
+
+.announcements-details a {
+  text-decoration: none;
+  color: rgb(23, 65, 79);
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.follow {
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+  gap: 16px;
+}
+
+.follow div {
+  display: flex;
+  justify-content: space-between;
+  width: 10rem;
+}
+
+.follow div a:hover {
+  transform: translate(0px, -16px)
+}
